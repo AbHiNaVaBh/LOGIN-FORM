@@ -83,7 +83,11 @@ body {
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px aqua,
-        0 0 25px aqua;
+                0 0 25px aqua;
+}
+.login-box a span{
+    position: absolute;
+    display: block;
 }
 
 .login-box a span:nth-child(1) {
@@ -100,5 +104,22 @@ body {
     }
     50%, 100%{
         left: 100%;
+    }
+}
+.login-box a span:nth-child(2) {
+    top: -100px;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, aqua);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0% {
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
     }
 }

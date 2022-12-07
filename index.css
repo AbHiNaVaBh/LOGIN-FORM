@@ -63,7 +63,8 @@ body {
     color: aqua;
     font-size: 13px;
 }
-.login-box form a{
+
+.login-box form a {
     position: relative;
     display: inline-block;
     padding: 10px 50px;
@@ -75,4 +76,12 @@ body {
     transition: .6s;
     margin-top: 30px;
     letter-spacing: 4px;
+}
+
+.login-box a:hover {
+    background: aqua;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px aqua,
+                0 0 25px aqua;
 }
